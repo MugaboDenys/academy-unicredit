@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="nt:unstructured" jcr:title="Slider" sling:resourceType="cq/gui/components/authoring/dialog">
+    <content jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/tabs" maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <tab1 jcr:primaryType="nt:unstructured" jcr:title="Slide 1" sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <tab1slidetype jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/form/select" class="cq-dialog-dropdown-showhide" cq-dialog-dropdown-showhide-target=".test-options-showhide-target" fieldLabel="Slide Type" name="./tab1slidetype">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <option1 jcr:primaryType="nt:unstructured" text="type1" value="slide--type1"/>
+                                            <option2 jcr:primaryType="nt:unstructured" text="type2" value="slide--type2"/>
+                                            <option3 jcr:primaryType="nt:unstructured" text="type3" value="slide--type3"/>
+                                        </items>
+                                    </tab1slidetype>
+                                    <tab1slidegroup1 jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container" class="test-options-showhide-target" showhidetargetvalue="slide--type1">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <themetype jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/form/select" fieldLabel="Select theme" name="./themeType">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <option1 jcr:primaryType="nt:unstructured" text="light" value="light"/>
+                                                    <option2 jcr:primaryType="nt:unstructured" text="dark" value="dark"/>
+                                                </items>
+                                            </themetype>
+                                            <image1group jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <desktopImage jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/heading" text="Upload desktop size image" level="4"/>
+                                                    <image1 jcr:primaryType="nt:unstructured" sling:resourceType="cq/gui/components/authoring/dialog/fileupload" autoStart="{Boolean}false" useHTML5="{Boolean}true" mimeTypes="[image]" class="cq-droptarget" fileNameParameter="./imageRef1" fileReferenceParameter="./fileReference1" multiple="{Boolean}false" name="./image1" title="Upload Image1 Asset" uploadUrl="${suffix.path}"/>
+                                                </items>
+                                            </image1group>
+                                            <image2group jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <mobileImage jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/heading" text="Upload mobile size image" level="4"/>
+                                                    <image2 jcr:primaryType="nt:unstructured" sling:resourceType="cq/gui/components/authoring/dialog/fileupload" autoStart="{Boolean}false" useHTML5="{Boolean}true" mimeTypes="[image]" class="cq-droptarget" fileNameParameter="./imageRef2" fileReferenceParameter="./fileReference2" multiple="{Boolean}false" name="./image2" title="Upload Image1 Asset" uploadUrl="${suffix.path}"/>
+                                                </items>
+                                            </image2group>
+                                            <title jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldLabel="Enter the title" name="./title1"/>
+                                            <subtitle jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldLabel="Enter the subtitle" name="./subtitle"/>
+                                        </items>
+                                    </tab1slidegroup1>
+                                    <tab1slidegroup2 jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container" class="test-options-showhide-target foundation-layout-util-vmargin" showhidetargetvalue="slide--type2">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <themetype jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/form/select" fieldLabel="Select theme" name="./themeType">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <option1 jcr:primaryType="nt:unstructured" text="light" value="light"/>
+                                                    <option2 jcr:primaryType="nt:unstructured" text="dark" value="dark"/>
+                                                </items>
+                                            </themetype>
+                                            <image1group jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <desktopImage jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/heading" text="Upload desktop size image" level="4"/>
+                                                    <image1 jcr:primaryType="nt:unstructured" sling:resourceType="cq/gui/components/authoring/dialog/fileupload" autoStart="{Boolean}false" useHTML5="{Boolean}true" mimeTypes="[image]" class="cq-droptarget" fileNameParameter="./imageRef1" fileReferenceParameter="./fileReference1" multiple="{Boolean}false" name="./image1" title="Upload Image1 Asset" uploadUrl="${suffix.path}"/>
+                                                </items>
+                                            </image1group>
+                                            <image2group jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <mobileImage jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/heading" text="Upload mobile size image" level="4"/>
+                                                    <image2 jcr:primaryType="nt:unstructured" sling:resourceType="cq/gui/components/authoring/dialog/fileupload" autoStart="{Boolean}false" useHTML5="{Boolean}true" mimeTypes="[image]" class="cq-droptarget" fileNameParameter="./imageRef2" fileReferenceParameter="./fileReference2" multiple="{Boolean}false" name="./image2" title="Upload Image1 Asset" uploadUrl="${suffix.path}"/>
+                                                </items>
+                                            </image2group>
+                                            <title jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldLabel="Enter the title" name="./title1"/>
+                                            <categorylabel jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/form/select" fieldLabel="Select the category" name="./categorylabel">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <option1 jcr:primaryType="nt:unstructured" text="OUR PEOPLE" value="OUR PEOPLE"/>
+                                                    <option2 jcr:primaryType="nt:unstructured" text="photography" value="photography"/>
+                                                    <option3 jcr:primaryType="nt:unstructured" text="nature" value="nature"/>
+                                                </items>
+                                            </categorylabel>
+                                            <tags jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/autocomplete/tags" title="Add the tags" name="./tagname"/>
+                                            <dategroup jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <pickertitle jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/heading" text="Select the date" level="4"/>
+                                                    <date jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/datepicker" name="./date"/>
+                                                </items>
+                                            </dategroup>
+                                            <desc jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textarea" fieldLabel="Enter the description" name="./desc"/>
+                                            <discovergroup jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <linkurl jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/pathfield" fieldDescription="Enter link to direct discover more button" fieldLabel="Discover button Url" name="./linkUrl"/>
+                                                    <linktarget jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/select" fieldLabel="select target" name="./target">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <option1 jcr:primaryType="nt:unstructured" text="current tab" value="_self" />
+                                                            <option2 jcr:primaryType="nt:unstructured" text="new tab" value="_blank" />
+                                                        </items>
+                                                    </linktarget>
+                                                </items>
+                                            </discovergroup>
+                                        </items>
+                                    </tab1slidegroup2>
+                                    <tab1slidegroup3 jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container" class="test-options-showhide-target foundation-layout-util-vmargin" showhidetargetvalue="slide--type3">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <tabs jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/tabs" maximized="{Boolean}true">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <slideproperties jcr:primaryType="nt:unstructured" jcr:title="Slide properties" sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <column jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                <items jcr:primaryType="nt:unstructured">
+
+                                                                    <themetype jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/form/select" fieldLabel="Select theme" name="./themeType">
+                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                            <option1 jcr:primaryType="nt:unstructured" text="light" value="light"/>
+                                                                            <option2 jcr:primaryType="nt:unstructured" text="dark" value="dark"/>
+                                                                        </items>
+                                                                    </themetype>
+                                                                    <image1group jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container">
+                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                            <desktopImage jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/heading" text="Upload desktop size image" level="4"/>
+                                                                            <image1 jcr:primaryType="nt:unstructured" sling:resourceType="cq/gui/components/authoring/dialog/fileupload" autoStart="{Boolean}false" useHTML5="{Boolean}true" mimeTypes="[image]" class="cq-droptarget" fileNameParameter="./imageRef1" fileReferenceParameter="./fileReference1" multiple="{Boolean}false" name="./image1" title="Upload Image1 Asset" uploadUrl="${suffix.path}"/>
+                                                                        </items>
+                                                                    </image1group>
+                                                                    <image2group jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container">
+                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                            <mobileImage jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/heading" text="Upload mobile size image" level="4"/>
+                                                                            <image2 jcr:primaryType="nt:unstructured" sling:resourceType="cq/gui/components/authoring/dialog/fileupload" autoStart="{Boolean}false" useHTML5="{Boolean}true" mimeTypes="[image]" class="cq-droptarget" fileNameParameter="./imageRef2" fileReferenceParameter="./fileReference2" multiple="{Boolean}false" name="./image2" title="Upload Image1 Asset" uploadUrl="${suffix.path}"/>
+                                                                        </items>
+                                                                    </image2group>
+                                                                    <title jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldLabel="Enter the title" name="./title1"/>
+                                                                    <subtitle jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldLabel="Enter the subtitle" name="./subtitle"/>
+                                                                    <desc jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textarea" fieldLabel="Enter the description" name="./desc"/>
+                                                                </items>
+                                                            </column>
+                                                        </items>
+                                                    </slideproperties>
+
+                                                    <modelroperties jcr:primaryType="nt:unstructured" jcr:title="model properties" sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <column jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                <items jcr:primaryType="nt:unstructured">
+                                                                    <title jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldLabel="Enter the title" name="./title1"/>
+                                                                    <subtitle jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldLabel="Enter the subtitle" name="./subtitle"/>
+                                                                    <desc jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textarea" fieldLabel="Enter the description" name="./desc"/>
+                                                                    <image1group jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container">
+                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                            <desktopImage jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/heading" text="Upload desktop size image" level="4"/>
+                                                                            <image1 jcr:primaryType="nt:unstructured" sling:resourceType="cq/gui/components/authoring/dialog/fileupload" autoStart="{Boolean}false" useHTML5="{Boolean}true" mimeTypes="[image]" class="cq-droptarget" fileNameParameter="./imageRef1" fileReferenceParameter="./fileReference1" multiple="{Boolean}false" name="./image1" title="Upload Image1 Asset" uploadUrl="${suffix.path}"/>
+                                                                        </items>
+                                                                    </image1group>
+                                                                    <image2group jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container">
+                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                            <mobileImage jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/heading" text="Upload mobile size image" level="4"/>
+                                                                            <image2 jcr:primaryType="nt:unstructured" sling:resourceType="cq/gui/components/authoring/dialog/fileupload" autoStart="{Boolean}false" useHTML5="{Boolean}true" mimeTypes="[image]" class="cq-droptarget" fileNameParameter="./imageRef2" fileReferenceParameter="./fileReference2" multiple="{Boolean}false" name="./image2" title="Upload Image1 Asset" uploadUrl="${suffix.path}"/>
+                                                                        </items>
+                                                                    </image2group>
+                                                                </items>
+                                                            </column>
+                                                        </items>
+                                                    </modelroperties>
+                                                </items>
+                                            </tabs>
+                                        </items>
+                                    </tab1slidegroup3>
+                                </items>
+                            </column>
+                        </items>
+                    </tab1>
+
+                    <tab2 jcr:primaryType="nt:unstructured" jcr:title="Slide 1" sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <tab1slidetype jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/form/select" class="cq-dialog-dropdown-showhide" cq-dialog-dropdown-showhide-target=".test-options-showhide-target" fieldLabel="Slide Type" name="./tab1slidetype">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <option1 jcr:primaryType="nt:unstructured" text="type1" value="slide--type1"/>
+                                            <option2 jcr:primaryType="nt:unstructured" text="type2" value="slide--type2"/>
+                                            <option3 jcr:primaryType="nt:unstructured" text="type3" value="slide--type3"/>
+                                        </items>
+                                    </tab1slidetype>
+                                    <tab1slidegroup1 jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container" class="test-options-showhide-target" showhidetargetvalue="slide--type1">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <themetype jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/form/select" fieldLabel="Select theme" name="./themeType">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <option1 jcr:primaryType="nt:unstructured" text="light" value="light"/>
+                                                    <option2 jcr:primaryType="nt:unstructured" text="dark" value="dark"/>
+                                                </items>
+                                            </themetype>
+                                            <image1group jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <desktopImage jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/heading" text="Upload desktop size image" level="4"/>
+                                                    <image1 jcr:primaryType="nt:unstructured" sling:resourceType="cq/gui/components/authoring/dialog/fileupload" autoStart="{Boolean}false" useHTML5="{Boolean}true" mimeTypes="[image]" class="cq-droptarget" fileNameParameter="./imageRef1" fileReferenceParameter="./fileReference1" multiple="{Boolean}false" name="./image1" title="Upload Image1 Asset" uploadUrl="${suffix.path}"/>
+                                                </items>
+                                            </image1group>
+                                            <image2group jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <mobileImage jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/heading" text="Upload mobile size image" level="4"/>
+                                                    <image2 jcr:primaryType="nt:unstructured" sling:resourceType="cq/gui/components/authoring/dialog/fileupload" autoStart="{Boolean}false" useHTML5="{Boolean}true" mimeTypes="[image]" class="cq-droptarget" fileNameParameter="./imageRef2" fileReferenceParameter="./fileReference2" multiple="{Boolean}false" name="./image2" title="Upload Image1 Asset" uploadUrl="${suffix.path}"/>
+                                                </items>
+                                            </image2group>
+                                            <title jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldLabel="Enter the title" name="./title1"/>
+                                            <subtitle jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldLabel="Enter the subtitle" name="./subtitle"/>
+                                        </items>
+                                    </tab1slidegroup1>
+                                    <tab1slidegroup2 jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container" class="test-options-showhide-target foundation-layout-util-vmargin" showhidetargetvalue="slide--type2">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <themetype jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/form/select" fieldLabel="Select theme" name="./themeType">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <option1 jcr:primaryType="nt:unstructured" text="light" value="light"/>
+                                                    <option2 jcr:primaryType="nt:unstructured" text="dark" value="dark"/>
+                                                </items>
+                                            </themetype>
+                                            <image1group jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <desktopImage jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/heading" text="Upload desktop size image" level="4"/>
+                                                    <image1 jcr:primaryType="nt:unstructured" sling:resourceType="cq/gui/components/authoring/dialog/fileupload" autoStart="{Boolean}false" useHTML5="{Boolean}true" mimeTypes="[image]" class="cq-droptarget" fileNameParameter="./imageRef1" fileReferenceParameter="./fileReference1" multiple="{Boolean}false" name="./image1" title="Upload Image1 Asset" uploadUrl="${suffix.path}"/>
+                                                </items>
+                                            </image1group>
+                                            <image2group jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <mobileImage jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/heading" text="Upload mobile size image" level="4"/>
+                                                    <image2 jcr:primaryType="nt:unstructured" sling:resourceType="cq/gui/components/authoring/dialog/fileupload" autoStart="{Boolean}false" useHTML5="{Boolean}true" mimeTypes="[image]" class="cq-droptarget" fileNameParameter="./imageRef2" fileReferenceParameter="./fileReference2" multiple="{Boolean}false" name="./image2" title="Upload Image1 Asset" uploadUrl="${suffix.path}"/>
+                                                </items>
+                                            </image2group>
+                                            <title jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldLabel="Enter the title" name="./title1"/>
+                                            <categorylabel jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/form/select" fieldLabel="Select the category" name="./categorylabel">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <option1 jcr:primaryType="nt:unstructured" text="OUR PEOPLE" value="OUR PEOPLE"/>
+                                                    <option2 jcr:primaryType="nt:unstructured" text="photography" value="photography"/>
+                                                    <option3 jcr:primaryType="nt:unstructured" text="nature" value="nature"/>
+                                                </items>
+                                            </categorylabel>
+                                            <tags jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/autocomplete/tags" title="Add the tags" name="./tagname"/>
+                                            <dategroup jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <pickertitle jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/heading" text="Select the date" level="4"/>
+                                                    <date jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/datepicker" name="./date"/>
+                                                </items>
+                                            </dategroup>
+                                            <desc jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textarea" fieldLabel="Enter the description" name="./desc"/>
+                                            <discovergroup jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <linkurl jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/pathfield" fieldDescription="Enter link to direct discover more button" fieldLabel="Discover button Url" name="./linkUrl"/>
+                                                    <linktarget jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/select" fieldLabel="select target" name="./target">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <option1 jcr:primaryType="nt:unstructured" text="current tab" value="_self" />
+                                                            <option2 jcr:primaryType="nt:unstructured" text="new tab" value="_blank" />
+                                                        </items>
+                                                    </linktarget>
+                                                </items>
+                                            </discovergroup>
+                                        </items>
+                                    </tab1slidegroup2>
+                                    <tab1slidegroup3 jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container" class="test-options-showhide-target foundation-layout-util-vmargin" showhidetargetvalue="slide--type3">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <tabs jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/tabs" maximized="{Boolean}true">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <slideproperties jcr:primaryType="nt:unstructured" jcr:title="Slide properties" sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <column jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                <items jcr:primaryType="nt:unstructured">
+
+                                                                    <themetype jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/form/select" fieldLabel="Select theme" name="./themeType">
+                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                            <option1 jcr:primaryType="nt:unstructured" text="light" value="light"/>
+                                                                            <option2 jcr:primaryType="nt:unstructured" text="dark" value="dark"/>
+                                                                        </items>
+                                                                    </themetype>
+                                                                    <image1group jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container">
+                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                            <desktopImage jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/heading" text="Upload desktop size image" level="4"/>
+                                                                            <image1 jcr:primaryType="nt:unstructured" sling:resourceType="cq/gui/components/authoring/dialog/fileupload" autoStart="{Boolean}false" useHTML5="{Boolean}true" mimeTypes="[image]" class="cq-droptarget" fileNameParameter="./imageRef1" fileReferenceParameter="./fileReference1" multiple="{Boolean}false" name="./image1" title="Upload Image1 Asset" uploadUrl="${suffix.path}"/>
+                                                                        </items>
+                                                                    </image1group>
+                                                                    <image2group jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container">
+                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                            <mobileImage jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/heading" text="Upload mobile size image" level="4"/>
+                                                                            <image2 jcr:primaryType="nt:unstructured" sling:resourceType="cq/gui/components/authoring/dialog/fileupload" autoStart="{Boolean}false" useHTML5="{Boolean}true" mimeTypes="[image]" class="cq-droptarget" fileNameParameter="./imageRef2" fileReferenceParameter="./fileReference2" multiple="{Boolean}false" name="./image2" title="Upload Image1 Asset" uploadUrl="${suffix.path}"/>
+                                                                        </items>
+                                                                    </image2group>
+                                                                    <title jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldLabel="Enter the title" name="./title1"/>
+                                                                    <subtitle jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldLabel="Enter the subtitle" name="./subtitle"/>
+                                                                    <desc jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textarea" fieldLabel="Enter the description" name="./desc"/>
+                                                                </items>
+                                                            </column>
+                                                        </items>
+                                                    </slideproperties>
+
+                                                    <modelroperties jcr:primaryType="nt:unstructured" jcr:title="model properties" sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <column jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                <items jcr:primaryType="nt:unstructured">
+                                                                    <title jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldLabel="Enter the title" name="./title1"/>
+                                                                    <subtitle jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldLabel="Enter the subtitle" name="./subtitle"/>
+                                                                    <desc jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textarea" fieldLabel="Enter the description" name="./desc"/>
+                                                                    <image1group jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container">
+                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                            <desktopImage jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/heading" text="Upload desktop size image" level="4"/>
+                                                                            <image1 jcr:primaryType="nt:unstructured" sling:resourceType="cq/gui/components/authoring/dialog/fileupload" autoStart="{Boolean}false" useHTML5="{Boolean}true" mimeTypes="[image]" class="cq-droptarget" fileNameParameter="./imageRef1" fileReferenceParameter="./fileReference1" multiple="{Boolean}false" name="./image1" title="Upload Image1 Asset" uploadUrl="${suffix.path}"/>
+                                                                        </items>
+                                                                    </image1group>
+                                                                    <image2group jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/foundation/container">
+                                                                        <items jcr:primaryType="nt:unstructured">
+                                                                            <mobileImage jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/heading" text="Upload mobile size image" level="4"/>
+                                                                            <image2 jcr:primaryType="nt:unstructured" sling:resourceType="cq/gui/components/authoring/dialog/fileupload" autoStart="{Boolean}false" useHTML5="{Boolean}true" mimeTypes="[image]" class="cq-droptarget" fileNameParameter="./imageRef2" fileReferenceParameter="./fileReference2" multiple="{Boolean}false" name="./image2" title="Upload Image1 Asset" uploadUrl="${suffix.path}"/>
+                                                                        </items>
+                                                                    </image2group>
+                                                                </items>
+                                                            </column>
+                                                        </items>
+                                                    </modelroperties>
+                                                </items>
+                                            </tabs>
+                                        </items>
+                                    </tab1slidegroup3>
+                                </items>
+                            </column>
+                        </items>
+                    </tab2>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>
+
+
+
+                               
+
+
+
+
+
+
+
+
+
+
+
+
+
+

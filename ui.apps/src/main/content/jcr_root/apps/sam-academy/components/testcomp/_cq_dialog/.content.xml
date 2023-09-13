@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Test showhide Dialog"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <items jcr:primaryType="nt:unstructured">
+        <tabs
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/tabs"
+            type="nav">
+            <items jcr:primaryType="nt:unstructured">
+                <tab1
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Type 1">
+                    <items jcr:primaryType="nt:unstructured">
+                        <type1-slider
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/slider"
+                            fieldLabel="Type 1 Slider"
+                            name="./type1Slider"
+                            value="0"
+                            minValue="0"
+                            maxValue="100"/>
+                    </items>
+                </tab1>
+                <tab2
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Type 2">
+                    <items jcr:primaryType="nt:unstructured">
+                        <type2-slider
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/slider"
+                            fieldLabel="Type 2 Slider"
+                            name="./type2Slider"
+                            value="0"
+                            minValue="0"
+                            maxValue="100"/>
+                    </items>
+                </tab2>
+                <tab3
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Type 3">
+                    <items jcr:primaryType="nt:unstructured">
+                        <type3-slider
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/slider"
+                            fieldLabel="Type 3 Slider"
+                            name="./type3Slider"
+                            value="0"
+                            minValue="0"
+                            maxValue="100"/>
+                    </items>
+                </tab3>
+                <tab4
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Type 4">
+                    <items jcr:primaryType="nt:unstructured">
+                        <type4-slider
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/slider"
+                            fieldLabel="Type 4 Slider"
+                            name="./type4Slider"
+                            value="0"
+                            minValue="0"
+                            maxValue="100"/>
+                    </items>
+                </tab4>
+                <tab5
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Type 5">
+                    <items jcr:primaryType="nt:unstructured">
+                        <type5-slider
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/slider"
+                            fieldLabel="Type 5 Slider"
+                            name="./type5Slider"
+                            value="0"
+                            minValue="0"
+                            maxValue="100"/>
+                    </items>
+                </tab5>
+            </items>
+        </tabs>
+    </items>
+</jcr:root>

@@ -1,0 +1,47 @@
+<div class="cardContainer">
+  <div
+    data-sly-test="${!properties.backgroundType}"
+    style="color: gray; text-align: center"
+  >
+    [ Click to select card type ]
+  </div>
+
+  <div
+    data-sly-test="${properties.backgroundType =='image'}"
+    class="cardBackground"
+  >
+   
+    <sly
+      data-sly-resource="${'ImageCmp' @resourceType='/apps/sam-academy/components/unicredit/atoms/imageCmp'}"
+    ></sly>
+  </div>
+  <div
+    data-sly-test="${properties.backgroundType =='video'}"
+    class="cardBackground"
+  >
+    <sly
+      data-sly-resource="${'backgroundVideo' @resourceType='/apps/sam-academy/components/unicredit/atoms/videoCmp'}"
+    ></sly>
+  </div>
+  <div class="atoms">
+    <div>
+      <sly
+        data-sly-resource="${'title' @resourceType='/apps/sam-academy/components/unicredit/atoms/title'}"
+      >
+      </sly>
+    </div>
+    <hr class="line" />
+    <div>
+      <sly
+        data-sly-resource="${'textCmp' @resourceType='/apps/sam-academy/components/unicredit/atoms/textCmp'}"
+      >
+      </sly>
+    </div>
+    <div class="btnContainer">
+      <sly
+        data-sly-resource="${'button' @resourceType='/apps/sam-academy/components/unicredit/atoms/buttonCmp'}"
+      >
+      </sly>
+    </div>
+  </div>
+</div>

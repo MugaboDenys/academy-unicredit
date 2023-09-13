@@ -1,0 +1,52 @@
+<!-- ******************* START RELATED HASHTAG LIST ******************* -->
+<sly data-sly-use.tags="it.codeland.sam.core.models.TagsModel">
+
+<div class="relatedHashtag container-fixed">
+  <div class="relatedHashtag__bar container">
+    <div class="bar__title text--subtitle" data-sly-test="${properties.title}">
+      ${properties.title}:
+    </div>
+    <div
+      class="bar__title text--subtitle"
+      data-sly-test="${wcmmode.edit && !properties.title}"
+    >
+      [ Click to configure related hash tag ]
+    </div>
+    <div class="bar__list" data-sly-repeat="${tags.items}">
+      <div
+        data-hashtag="${item}"
+        data-maxarticle="${properties.maxArticle || 20}"
+        data-articleorder="${properties.articleOrder || 'DESC'}"
+        class="bar__item text--body"
+      >
+        #${item} ${properties.path}
+      </div>
+    </div>
+  </div>
+  <div class="relatedHashtag__result container">
+    <div class="result__cta">
+      <div class="result__number">
+        <span class="number text--paragraph-title">0</span>
+        <span class="results text--body">results</span>
+      </div>
+      <div class="result__close">
+        <span class="text--label">${properties.closeLabel}</span>
+        <span class="close icon icon-close"></span>
+      </div>
+    </div>
+    <div class="result__cards">
+      <div class="swiper-container">
+        <div class="swiper-wrapper"></div>
+
+        <!-- pagination -->
+        <div
+          class="swiper-pagination"
+          data-hero-pagination
+          data-pagination
+        ></div>
+      </div>
+    </div>
+  </div>
+</div>
+</sly>
+<!-- ******************* END RELATED HASHTAG LIST ******************* -->

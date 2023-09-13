@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Raleway:wght@200&display=swap");
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.cardContainer {
+  width: 380px;
+  height: 320px;
+  position: relative;
+  z-index: 0;
+}
+.cardBackground {
+  height: 320px;
+  position: absolute;
+}
+
+.titleCmp {
+  z-index: 1;
+  font-family: "Raleway", sans-serif !important;
+  text-align: center;
+  width: 100%;
+}
+.textCmp {
+  z-index: 1;
+  font-family: "Bodoni Moda", serif !important;
+  text-align: center;
+  width: 100%;
+  top: 20%;
+}
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+}
+.btn {
+  margin: 0 auto;
+  border: 1px solid white;
+  z-index: 10;
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  padding: 10px 15px;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.btn:hover {
+  opacity: 75%;
+}
+img {
+  width: 100%;
+  height: 100%;
+  max-width: 820px;
+}
+
+.atoms {
+  z-index: 2;
+  position: absolute;
+  top: 20%;
+}
+
+.line {
+  border-top: 0.1px solid #dddd;
+  width: 20%;
+  margin-bottom: 10%;
+}
+
+.atomsBtn{
+  margin: 0 auto;
+  border: 1px solid white;
+  z-index: 10;
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  padding: 10px 15px;
+  color: white;
+  cursor: pointer;
+  
+}
+.atomsBtn:hover{
+  opacity: 75%;
+}

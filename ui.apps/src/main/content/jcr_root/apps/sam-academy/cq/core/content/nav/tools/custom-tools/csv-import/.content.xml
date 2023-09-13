@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:description="Upload csv file and get it converted to web pages"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="CSV to PAGES Converter"
+    href="/apps/sam-academy/components/unicredit/csv-import/csv-import.html"
+    icon="fileExcel"
+    id="custom-csv-upload"
+    target="_blank"/>

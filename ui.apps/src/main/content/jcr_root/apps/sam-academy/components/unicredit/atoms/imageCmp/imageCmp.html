@@ -1,0 +1,36 @@
+<picture
+  data-sly-use.handleRendition="it.codeland.sam.core.models.ImageRenditionsModel"
+  itemtype="http://schema.org/ImageObject"
+>
+  <source
+    media="(max-width:768px)"
+    srcset="
+      ${handleRendition.mobileRenditionPath}       1x,
+      ${handleRendition.mobileRetinaRenditionPath} 2x
+    "
+  />
+  <source
+    media="(min-width:769px)"
+    srcset="
+      ${handleRendition.desktopRenditionPath}       1x,
+      ${handleRendition.desktopRetinaRenditionPath} 2x
+    "
+  />
+
+  <img
+    height="100%"
+    width="100%"
+    src="${handleRendition.desktopRenditionPath}"
+    title="background"
+    alt="background"
+  />
+</picture>
+<sly data-sly-test="${!properties.fileReference && !properties.fileMobile}">
+  <div>Add Image</div>
+  <img
+    height="100%"
+    width="100%"
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png"
+    alt="bg image"
+  />
+</sly>
